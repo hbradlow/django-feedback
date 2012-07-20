@@ -7,6 +7,9 @@ from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
 from django.conf import settings
 
+from django.contrib.contenttypes.models import ContentType
+from django.contrib.contenttypes import generic
+
 class BaseFeedback(models.Model):
 	class Meta:
 		abstract = True
